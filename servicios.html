@@ -32,139 +32,133 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google Translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+              pageLanguage: 'es',
+              includedLanguages: 'en,es,pt',
+              autoDisplay: false
+          }, 'google_translate_element');
+      }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
   </head>
 
   <body>
+    <div id="google_translate_element"></div>
     <!-- Header Start -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 bg-secondary d-none d-lg-block">
-          <a
-            href="index.html"
-            class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
-          >
-            <h1 class="m-0 display-4 text-primary text-uppercase">
-              Ayahuasca <br />
-              Reservation
-            </h1>
-          </a>
-        </div>
-        <div class="col-lg-9">
-          <div class="row bg-white border-bottom d-none d-lg-flex">
-            <div class="col-lg-7 text-left">
-              <div class="h-100 d-inline-flex align-items-center py-2 px-3">
-                <i class="fa fa-phone-alt text-primary mr-2"></i>
-                <small>+51 918 327 482</small>
-              </div>
-              <div class="h-100 d-inline-flex align-items-center py-2 px-2">
-                <i class="fa fa-phone-alt text-primary mr-2"></i>
-                <small>+51 900 183 527</small>
-              </div>
-            </div>
-            <div class="col-lg-5 text-right">
-              <div class="d-inline-flex align-items-center p-2">
-                <a
-                  class="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                  href=""
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                  class="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                  href=""
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a
-                  class="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                  href=""
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
+          <div class="col-lg-3 bg-secondary d-none d-lg-block">
+              <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                  <h1 class="m-0 display-4 text-primary text-uppercase">Ayahuasca <br>
+                      Murayari</h1>
+              </a>
           </div>
-          <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
-            <a href="index.html" class="navbar-brand d-block d-lg-none">
-              <h1 class="m-0 display-4 text-primary text-uppercase">Justice</h1>
-            </a>
-            <button
-              type="button"
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navbarCollapse"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarCollapse"
-            >
-              <div class="navbar-nav mr-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link"
-                  >Sobre Nosotros</a
-                >
-                <a href="service.html" class="nav-item nav-link">Reseñas</a>
-                <a href="team.html" class="nav-item nav-link">Galeria</a>
-                <div class="nav-item dropdown d-flex">
-                  <a href="servicios.html" class="nav-link">Servicios</a>
-                  <div class="dropdown-menu rounded-0 m-0">
-                    <a href="blog.html" class="dropdown-item">Limpieza de Energías Negativas</a>
-                    <a href="#" class="dropdown-item">Baño de Florecimiento</a>
-                    <a href="#" class="dropdown-item">Ceremonia de Ayahuasca</a>
+          <div class="col-lg-9">
+              <div class="row bg-white border-bottom d-none d-lg-flex">
+                  <div class="col-lg-7 text-left">
+                      <div class="h-100 d-inline-flex align-items-center py-2 px-3">
+                          <i class="fa fa-phone-alt text-primary mr-2"></i>
+                          <small>+51 960 695 965</small>
+                      </div>
+                      <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                          <i class="fa fa-phone-alt text-primary mr-2"></i>
+                          <small>+51 960 695 965</small>
+                      </div>
                   </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contactanos</a>
+                  <div class="col-lg-5 text-right">
+                      <div class="d-inline-flex align-items-center p-2">
+                          <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                              <i class="fab fa-youtube"></i>
+                          </a>
+                          <div class="d-inline-flex align-items-center p-2">
+                              <select class="form-control language-select" id="language-select">
+                                  <option value="es"><i class="fas fa-flag"></i> Español</option>
+                                  <option value="en"><i class="fas fa-flag"></i> English</option>
+                                  <option value="pt"><i class="fas fa-flag"></i> Portugués</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <a href="" class="btn btn-primary mr-3 d-none d-lg-block"
-                >Reserva Ahora!</a
-              >
-            </div>
+              <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                  <a href="index.html" class="navbar-brand d-block d-lg-none">
+                      <h1 class="m-0 display-4 text-primary text-uppercase">Ayahuasca Murayari</h1>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                      <div class="navbar-nav mr-auto py-0">
+                          <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                          <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                          <a href="service.html" class="nav-item nav-link">Reseñas</a>
+                          <a href="team.html" class="nav-item nav-link">Galeria</a>
+                          <div class="nav-item dropdown d-flex">
+                              <a href="servicios.html" class="nav-link">Servicios</a>
+                              <div class="dropdown-menu rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Limpieza de Energías Negativas</a>
+                                <a href="#" class="dropdown-item">Baño de Florecimiento</a>
+                                <a href="#" class="dropdown-item">Ceremonia de Ayahuasca</a>
+                              </div>
+                            </div>
+                          <a href="contact.html" class="nav-item nav-link">Contactanos</a>
+                      </div>
+                      <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Reserva Ahora!</a>
+                  </div>
 
-            <style>
-              /* Estilos para el hover del dropdown */
-              .nav-item.dropdown:hover .dropdown-menu {
-                display: block;
-                margin-top: 0;
-              }
-
-              /* Ajustes adicionales para mejorar la experiencia */
-              .nav-item.dropdown {
-                position: relative;
-              }
-
-              .dropdown-menu {
-                margin-top: 0;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                z-index: 1000;
-                transition: all 0.2s ease-in-out;
-              }
-
-              /* Ajuste para el split dropdown */
-              .dropdown-toggle-split {
-                padding-left: 0.5rem;
-                margin-left: -0.5rem;
-              }
-
-              /* Asegurar que el menú permanezca visible mientras se hace hover */
-              .dropdown-menu:hover {
-                display: block;
-              }
-
-              @media (max-width: 991.98px) {
-                .nav-item.dropdown:hover .dropdown-menu {
-                  position: static;
-                  float: none;
-                }
-              }
-            </style>
-          </nav>
-        </div>
+                  <style>
+                      /* Estilos para el hover del dropdown */
+                      .nav-item.dropdown:hover .dropdown-menu {
+                          display: block;
+                          margin-top: 0;
+                      }
+                      
+                      /* Ajustes adicionales para mejorar la experiencia */
+                      .nav-item.dropdown {
+                          position: relative;
+                      }
+                      
+                      .dropdown-menu {
+                          margin-top: 0;
+                          position: absolute;
+                          top: 100%;
+                          left: 0;
+                          z-index: 1000;
+                          transition: all 0.2s ease-in-out;
+                      }
+                      
+                      /* Ajuste para el split dropdown */
+                      .dropdown-toggle-split {
+                          padding-left: 0.5rem;
+                          margin-left: -0.5rem;
+                      }
+                      
+                      /* Asegurar que el menú permanezca visible mientras se hace hover */
+                      .dropdown-menu:hover {
+                          display: block;
+                      }
+                      
+                      @media (max-width: 991.98px) {
+                          .nav-item.dropdown:hover .dropdown-menu {
+                              position: static;
+                              float: none;
+                          }
+                      }
+                      </style>
+              </nav>
+          </div>
       </div>
-    </div>
+  </div>
     <!-- Header End -->
 
     <!-- Carousel Start -->
@@ -617,13 +611,30 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
     <script>
       function toggleWhatsAppPopup() {
         const popup = document.getElementById("whatsappPopup");
         popup.classList.toggle("show");
       }
     </script>
+
+    <script>
+      // Mantener el idioma seleccionado
+      $(document).ready(function() {
+          if (localStorage.getItem('selectedLanguage') === 'en') {
+              $('#language-select').val('en').trigger('change');
+          }
+      });
+  
+      $('#language-select').on('change', function() {
+          localStorage.setItem('selectedLanguage', $(this).val());
+      });
+  </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+
   </body>
 </html>
